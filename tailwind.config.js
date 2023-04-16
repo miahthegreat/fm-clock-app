@@ -1,18 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
-    './app/**/*.{js,ts,jsx,tsx}',
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        "desktop-daytime": "url('/desktop/bg-image-daytime.webp')",
+        "desktop-nighttime": "url('/desktop/bg-image-nighttime.webp')",
+
+        "tablet-daytime": "url('/tablet/bg-image-daytime.webp')",
+        "tablet-nighttime": "url('/tablet/bg-image-nighttime.webp')",
+        "mobile-daytime": "url('/mobile/bg-image-daytime.webp')",
+        "mobile-nighttime": "url('/mobile/bg-image-nighttime.webp')",
       },
     },
   },
   plugins: [],
-}
+};
